@@ -6,6 +6,8 @@ A rotating 4D hypercube (tesseract), rendered in pygame. One `main.py` file, no 
 
 A tesseract has 16 corners living in 4D space (x, y, z, w) instead of the usual 3. Each frame the corners get rotated through a few different planes — some purely in 4D (xw, yw, zw), some in normal 3D (xz, yz) so the shape doesn't just look like a flat spinning square.
 
+![Aayush REPL Banner](assets/REPL.jpg)
+
 After rotating, the points get projected down in two steps:
 1. The w-axis collapses into 3D — anything far along w shrinks or grows, which is what actually sells the "4D" look.
 2. Normal z-axis perspective turns that 3D into the 2D points drawn on screen.
